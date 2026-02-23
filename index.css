@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-medical-primary: #0F4C81;
+  --color-medical-secondary: #00A8E8;
+  --color-medical-accent: #2ECC71;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 overflow-x-hidden;
+  }
+}
+
+.medical-gradient {
+  background: linear-gradient(135deg, var(--color-medical-primary) 0%, var(--color-medical-secondary) 100%);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.rtl {
+  direction: rtl;
+}
